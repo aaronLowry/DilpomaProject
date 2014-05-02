@@ -2,35 +2,17 @@ package au.com.CardCasino.GameRules;
 
 public class Rules {
 
-	public boolean playerSit(boolean sit) {
-		if(sit){
-			return true;
-		} else{
-			return false;
-		}
-	}
+	// This is the driver of the game. 
+	// This class will be the one deciding what a player does and whose turn it is.
 	
-	public boolean playerBust(boolean bust) {
-		if(bust) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-	
-	public boolean isBlackjack(int cardCount) {
-		if(cardCount == 21) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-	
-	public boolean playerSplit(boolean split) {
-		if(split) {
-			return true;
-		} else {
-			return false;
-		}		
-	}	
+	// Player 1 - 5 turn
+	public void isPlayerTurn() {}
+	// Player action
+		// Hit
+		// Stand
+		// Split
+		// Double down
+		// Insurance
+		// Surrender
+		// Bust
 }
