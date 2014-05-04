@@ -1,4 +1,4 @@
-package au.com.CardCasino.Deck;
+package au.com.Blackjack.Deck;
 
 import java.io.*;
 

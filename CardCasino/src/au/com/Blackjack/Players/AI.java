@@ -1,4 +1,4 @@
-package au.com.CardCasino.Players;
+package au.com.Blackjack.Players;
 
 import java.util.ArrayList;
 import java.util.List;

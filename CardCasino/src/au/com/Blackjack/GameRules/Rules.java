@@ -1,4 +1,4 @@
-package au.com.CardCasino.GameRules;
+package au.com.Blackjack.GameRules;
 
 public class Rules {
 
