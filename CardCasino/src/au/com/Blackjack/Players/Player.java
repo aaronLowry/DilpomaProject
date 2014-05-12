@@ -12,12 +12,10 @@ public class Player {
 	private String playerName;
 	private double chips;
 	private Object[] playerHand;
-	private boolean dealer;
 
 	// Constructors
 	public Player(String PlayerName, boolean Dealer) {
 		setPlayerName(PlayerName);
-		isDealer(Dealer);
 	}
 	public Player(String PlayerName, double Chips) {
 		setPlayerName(PlayerName);
@@ -39,21 +37,18 @@ public class Player {
 		return chips;
 	}
 
+	// Players Hand
+	// Need to refactor this method as it won't work if there is a need for more cards
 	public void playerHand(Object[] cards) {
 		if(playerHand.length < MIN_CARDS_IN_HAND) {
 			for(int i = 0; i < cards.length; i++) {
 				playerHand[i] = cards[i];
 			}
 		}
-		
-		
 	}
-	
-	private void isDealer(boolean dealer) {
-		if(dealer) {
-			this.dealer = true;
-			return;
+	public void emptyPlayerHand() {
+		for(int i = 0; i < playerHand.length; i++) {
+			playerHand[i] = null;
 		}
-		this.dealer = false;
 	}
 }
