@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+// RESEARCH STRATEGY PATTERN
 public class AI extends Player implements Strategy {
 	
 	List<String> names = new ArrayList<String>();
