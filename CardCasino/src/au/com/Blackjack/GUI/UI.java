@@ -47,6 +47,7 @@ public class UI extends JFrame implements ActionListener {
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 	}
 
+	// Add an anonymous object for the action listeners
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String action = e.toString();
