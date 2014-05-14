@@ -36,6 +36,7 @@ public class Deck {
 		Collections.shuffle(deck);
 	}
 
+	// Create a card interface so that the Dealer and Player know what a card is
 	public class Card {
 		private CardSuit suit;
 		private CardName name;
